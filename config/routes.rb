@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+# resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+root 'welcome#alpha-blog'
+    get 'alpha', to: 'welcome#alpha-blog'
+  get 'about', to: 'welcome#about'
+  get 'articles', to: 'articles#new'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
