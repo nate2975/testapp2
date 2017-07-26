@@ -1,20 +1,40 @@
-<h1>Listing All Articles</h1>
-<p>
-<%= link_to "Create new article", new_article_path %>
-</p>
-<table>
-    <tr>
-       <th>Title</th>
-       <th>Description</th>
-    </tr>
+ <link href="css/custom_alpha.css" rel="stylesheet">
+
+<nav class="navbar navbar-light bg-faded">
+  <h1 class="navbar-brand mb-0">Article Portfolio</h1>
+</nav>
+
+
+
+<div class="btn btn-primary">
+  <%= link_to "Create new article", new_article_path, :class => "btn btn-primary" %> 
+</div>
+<table class="table table-hover">
     
-    <%@articles.each do |article|%>
+   
+
+  <thead>
     <tr>
-        <td><%= article.title%></td>
+        <caption><h3>Articles</h3></caption>
+      <th>Article Title</th>
+      <th>Article description</th>
+      <th>Show Article</th>
+      <th>Edit Article</th>
+      <th>Delete Article</th>
+    </tr>
+  </thead>
+  <tbody>
+       <%@articles.each do |article|%>
+    <tr>
+        
+      
+       <td><%= article.title%></td>
         <td><%= article.description%></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
              <td><%= link_to 'Show', article_path(article) %></td>
              <td><%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
-    </tr>
-    <% end %>
+      
+       <% end %>
+   
+  </tbody>
 </table>
