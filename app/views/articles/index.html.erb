@@ -59,7 +59,7 @@
         
       
        <td><%= article.title%></td>
-        <td><%= article.description%></td>
+        <td><ul><li><%= article.description %></li></ul></td>
         <td><%= image_tag(article.img)%></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
              <td><%= link_to 'Show', article_path(article) %></td>

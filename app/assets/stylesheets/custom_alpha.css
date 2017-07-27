@@ -38,3 +38,9 @@ img {
     vertical-align: middle;
     inline-size: 50px;
 }
+ .form-control {
+background-color: rgba(230, 166, 44, 0.48);
+width: 450px;
+margin-bottom: 20px;
+border: 1px solid #437791;
+ }
