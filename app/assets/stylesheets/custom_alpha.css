@@ -29,3 +29,12 @@ table {
     background-color: #d9edf7;
     table-border: 1px solid black;
 }
+
+a:visited {
+    color: #e6a62c;
+}
+
+img {
+    vertical-align: middle;
+    inline-size: 50px;
+    {
