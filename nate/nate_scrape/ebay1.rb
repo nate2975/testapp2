@@ -4,7 +4,7 @@ require "nokogiri"
 require 'mechanize'
 
 
-url = "http://www.ebay.com/sch/Grovana%20Men's%20diver%20black%20dial%20blue%20bezel"
+url = "https://www.ebay.com/sch/Grovana%20Men's%20diver%20black%20dial%20blue%20bezel"
 data = Nokogiri::HTML(open(url))
 
 data.css(".li").each do |item|

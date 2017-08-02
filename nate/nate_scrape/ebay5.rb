@@ -14,7 +14,7 @@ while !file.eof?
     new = '&rt=nc&LH_ItemCondition=1000'
     #ebay location
     loc = '&rt=nc&LH_PrefLoc=1'
-    url = "http://www.ebay.com/sch/Wristwatches/31387/i.html?_from=R40&_nkw=#{query}"
+    url = "https://www.ebay.com/sch/Wristwatches/31387/i.html?_from=R40&_nkw=#{query}"
     data = Nokogiri::HTML(open(url))
 
    data.css(".li").each do |item|

@@ -1,6 +1,12 @@
 class WelcomeController < ApplicationController
     
-    def alpha
+    def home
     
     end
   end
+  
+  def about
+  
+  end
+  
+  
